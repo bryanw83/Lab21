@@ -1,0 +1,112 @@
+@charset "ISO-8859-1";
+
+a{
+	padding:4px;
+}
+
+a:hover{
+	font-size:40px;
+}
+
+h3{
+	
+	font-size:30px;
+	padding: 4px;
+	margin: 0 0 3% 40%;
+}
+
+
+
+body {
+	
+	background-image: url(https://cdn.dribbble.com/users/480393/screenshots/2493348/dribbble.jpg);
+	color:white;
+}
+
+
+
+h1 {
+	background-color:#BA3A04;
+	border:3px;
+	border-color:black;
+	border-radius: 3px;
+	box-shadow:black;
+	box-shadow: 0 0 5px 5px;
+	color:white;
+	text-align:center;
+	margin:2% 10% 0% 10%;
+	padding: 5px;
+	font-size:60px;
+}
+
+.regButton{
+	background-color:white;
+	border: 3px;
+	border-color:black;
+	border-radius: 3px;
+	color:black;
+	box-shadow:gray;
+	box-shadow:0 0 3px 3px;
+	font-size:40px;
+	text-align:center;
+	margin:10% 22% 5% 22%;
+	padding:2px;
+}
+
+/* .regButton:hover{
+	border: 5px;
+	border-color:gray;
+	box-shadow:gray;
+	box-shadow:0 0 5px 5px;
+	padding:5px;
+}*/
+
+ul {border:solid;
+	style-type:none;
+	border:4px;
+	border-color:black;
+	border-radius:3px;
+	padding: 3px;
+	background-color:white;
+	style-type:inline;
+	margin:20% 40% 0 40%;
+	text-align:center;
+}
+
+.formStyle{
+	margin:5%;
+}
+
+.formStyle p {
+	background-color:#7D4804;
+	border-radius:3px;
+	box-shadow:#FAEDDC;
+	box-shadow: 0 0 4px 4px;
+	font-size:20px;
+	padding:4px 4px 4px 6px;
+	margin: 0 72% 0 0;
+}
+
+.button{
+	font-size:25px;
+	padding:10px;
+}
+
+footer{
+	margin: 28% 0 0 45%;
+	
+	
+}
+
+.h4{
+	border:5px solid black;
+	background-color:white;
+	padding:5px;
+	text-align:center;
+	margin:10% 20% 30% 45%; 
+	color:black;
+}
+
+
+
+
