@@ -1,5 +1,6 @@
 package com.Lab21.Lab21;
 
+
 import org.springframework.stereotype.Component;
 
 @Component
@@ -7,9 +8,12 @@ public class Person {
 	
 	private String firstName;
 	private String lastName;
+	private String age;
+	private String address;
 	private String email;
 	private String phoneNum;
 	private String password;
+	private String choice;
 	
 	public Person() {
 		
@@ -44,8 +48,8 @@ public class Person {
 		return email;
 	}
 
-	public void setEmail(String email) {
-		this.email = email;
+	public void setEmail(String userEmail) {
+		this.email = userEmail;
 	}
 
 	public String getPhoneNum() {
@@ -63,11 +67,41 @@ public class Person {
 	public void setPassword(String password) {
 		this.password = password;
 	}
+	
+	
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+	
+	
+
+	public String getAge() {
+		return age;
+	}
+
+	public void setAge(String age) {
+		this.age = age;
+	}
+	
+	
+
+	public String getChoice() {
+		return choice;
+	}
+
+	public void setChoice(String choice) {
+		this.choice = choice;
+	}
 
 	@Override
 	public String toString() {
-		return "Person [firstName=" + firstName + ", lastName=" + lastName + ", email=" + email + ", phoneNum=" + phoneNum
-				+ ", password=" + password + "]";
+		return "First Name: " + firstName + " Last Name:" + lastName + "Age: " + age + "Address: " + address +  "Email: " + email + " Phone Number: " + phoneNum
+				+ " Password: " + password;
 	}
 
 	

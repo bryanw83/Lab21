@@ -24,32 +24,37 @@ public class CoffeeShopController {
 		
 	}
 	
-	@RequestMapping("registry")
+	@RequestMapping("/registry")
 		public ModelAndView regPage() {
 		return new ModelAndView("registry");
 	}
 	
-	@RequestMapping("summary")
+	@RequestMapping("/summary")
 	public ModelAndView sumPage() {
 		return new ModelAndView("summary");
 	}
 	
-	@RequestMapping("userSum")
-	public ModelAndView formTest(@RequestParam("firstName") String fname, @RequestParam("lastName") String lname,
-			@RequestParam("email") String userEmail, @RequestParam("phoneNum") String userPhone, @RequestParam("password") String userPass) {
+	@RequestMapping("/userSum")
+	public ModelAndView listpeeps(@RequestParam("firstName") String fname, @RequestParam("lastName") String lname, 	@RequestParam("age") String age, @RequestParam("address") String address,
+			@RequestParam("email") String userEmail, @RequestParam("phoneNum") String userPhone, @RequestParam("password") String userPass)
+		
+	{
+		ArrayList<Person> peeps = new ArrayList<>();
 		p.setFirstName(fname);
 		p.setLastName(lname);
+		p.setAge(age);
+		p.setAddress(address);
 		p.setEmail(userEmail);
 		p.setPhoneNum(userPhone);
-		p.setPassword(userPass);
-		return new ModelAndView("summary", "userData", p);
+		p.setPassword(userPass);;
+		peeps.add(p);
+		return new ModelAndView("summary", "peeplist", peeps);
 	}
 	
-	@RequestMapping("/listpeople")
-	public ModelAndView listpeeps() {
-	
-	ArrayList<Person> peeps = new ArrayList<>();
-	peeps.add(p);
-	return new ModelAndView("peeps", "peeplist", peeps);
+	@RequestMapping("/radioButton")
+	public ModelAndView radioEx(@RequestParam("choice") String choice) {
+		return new ModelAndView("summary", "userData", choice);
 	}
+	
+
 }
